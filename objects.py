@@ -93,7 +93,17 @@ class Dot(pygame.sprite.Sprite):
 
 class ScoreCard:
 	def __init__(self, x, y, size, style, color, win):
-		
+		self.size = size
+		self.color = color
+		self.win = win
+		self.inc = 1  # Yazı büyüklüğü animasyonu için
+		self.animate = False  # Animasyon açık mı?
+
+		self.style = style
+		self.font = pygame.font.Font(self.style, self.size)
+		self.image = self.font.render("0", True, self.color)
+		self.rect = self.image.get_rect(center=(x, y))
+		self.shadow_rect = self.image.get_rect(center=(x + 3, y + 3))
 
 	def update(self, score):
 		
