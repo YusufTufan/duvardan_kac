@@ -118,3 +118,11 @@ class ScoreCard:
 		shadow = self.font.render(f"{score}", True, (54, 69, 79))
 		self.win.blit(shadow, self.shadow_rect)
 		self.win.blit(self.image, self.rect)
+
+class Message:
+	def __init__(self, x, y, size, text, font, color, win):
+		
+		
+	def update(self):
+		
+
