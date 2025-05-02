@@ -68,3 +68,6 @@ bar_group = pygame.sprite.Group()
 dot_group = pygame.sprite.Group()
 particle_group = pygame.sprite.Group()
 
+# Skor kartı
+score_msg = ScoreCard(WIDTH//2, 100, 50, score_font, WHITE, win)
+
