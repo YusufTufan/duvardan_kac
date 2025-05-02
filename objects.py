@@ -52,4 +52,7 @@ class Player:
 
 	# Oyuncuyu başlangıç konumuna getir
 	def reset(self):
-	
+		self.x = 145
+		self.y = 270
+		self.rect = self.image.get_rect(center=(self.x,self.y))
+
