@@ -23,9 +23,32 @@ class Player:
 		self.dy = 4  # Y eksenindeki hareket miktarı
 		self.frame_top = HEIGHT//2 - 75  # Üst sınır
 		self.frame_bottom = HEIGHT//2 + 75  # Alt sınır
+		
 	# Oyuncuyu ekranda güncelleyen fonksiyon
 	def update(self, show_player, clicked):
-		
+		if show_player:
+			self.rect.y += self.dy  # Aşağı/yukarı hareket
+
+			if clicked:
+				# Oyuncu sınırlar içinde mi diye kontrol
+				if self.frame_top < self.rect.y < self.frame_bottom:
+					self.dy *= -1  # Hareket yönünü değiştir
+					flip_fx.play()
+
+			# Alt sınıra çarptıysa
+			if self.rect.bottom >= self.frame_bottom:
+				self.dy *= -1
+				self.rect.bottom = self.frame_bottom - 1
+				dash_fx.play()
+
+			# Üst sınıra çarptıysa
+			if self.rect.top <= self.frame_top:
+				self.dy *= -1
+				self.rect.top = self.frame_top + 1
+				dash_fx.play()
+
+			# Oyuncuyu ekrana çiz
+			self.win.blit(self.image, self.rect)
 
 	# Oyuncuyu başlangıç konumuna getir
 	def reset(self):
