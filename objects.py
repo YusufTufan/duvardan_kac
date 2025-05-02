@@ -137,5 +137,13 @@ class Message:
 	def update(self):
 		self.win.blit(self.shadow, self.shadow_rect)
 		self.win.blit(self.image, self.rect)
+
+# Patlama efekti 
+class Particle(pygame.sprite.Sprite):
+	def __init__(self, x, y, color, win):
+		
+
+	def update(self):
+		
 		
 
