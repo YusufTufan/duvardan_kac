@@ -71,3 +71,5 @@ particle_group = pygame.sprite.Group()
 # Skor kartı
 score_msg = ScoreCard(WIDTH//2, 100, 50, score_font, WHITE, win)
 
+# Oyuncu
+p = Player(win)
