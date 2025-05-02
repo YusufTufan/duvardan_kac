@@ -97,6 +97,30 @@ running = True
 start_time = pygame.time.get_ticks()
 
 while running:
+    clicked = False
+    win.blit(bg, (0, 0))
+
+    # Olay kontrolleri
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE or event.key == pygame.K_q:
+                running = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if home_page:
+                home_page = False
+                game_page = True
+                score_page = False
+                score = 0
+                bar_speed = 3
+                player_alive = True
+                p = Player(win)
+                start_time = pygame.time.get_ticks()
+            elif game_page:
+                clicked = True
+        if event.type == pygame.MOUSEBUTTONUP:
+            clicked = False
 
        
 
