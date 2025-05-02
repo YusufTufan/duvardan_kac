@@ -163,5 +163,63 @@ while running:
 
     # Oyun ekranı
     if game_page:
+        win.blit(frame, (frameX, frameY))
+
+		if player_alive:
+			current_time = pygame.time.get_ticks()
+			if current_time - start_time >= bar_frequency:
+				bar_height = random.choice(bar_heights)
+				pos = pos * -1
+
+				if pos == -1:
+					bar_y = frameY
+					dot_y = frameY + bar_height + 20
+				elif pos == 1:
+					bar_y = frameY + frame_height - bar_height
+					dot_y = frameY + frame_height - bar_height - 20
+
+				bar = Bar(WIDTH, bar_y, bar_height, BLACK, win)
+				dot = Dot(WIDTH + 10, dot_y, win)
+				bar_group.add(bar)
+				dot_group.add(dot)
+
+				start_time = current_time
+
+			for dot in dot_group:
+				if dot.rect.colliderect(p):
+					dot.kill()
+					score += 1
+					if highscore <= score:
+						highscore = score
+					score_fx.play()
+					score_msg.animate = True
+
+			if pygame.sprite.spritecollide(p, bar_group, False):
+				x, y = p.rect.center
+				for i in range(10):
+					particle = Particle(x, y, WHITE, win)
+					particle_group.add(particle)
+				player_alive = False
+				dead_fx.play()
+				bar_speed = 0
+
+		bar_group.update(bar_speed)
+		dot_group.update(bar_speed)
+		p.update(player_alive, clicked)
+		
+		score_msg.update(score)
+		particle_group.update()
+
+		if not player_alive and len(particle_group) == 0:
+			score_page = True
+			game_page = False
+
+		if score_page:
+			bar_group.empty()
+			dot_group.empty()
+			score_page_fx.play()
+			start_time = 0
+
+			final_score = Message(WIDTH//2, 150, 100, f"{score}", score_font, WHITE, win)
 
 
