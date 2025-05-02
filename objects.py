@@ -89,4 +89,11 @@ class Dot(pygame.sprite.Sprite):
 		# Noktayı tekrar çiz
 		pygame.draw.circle(self.win, self.color, (self.x, self.y), 6)
 		self.rect = pygame.draw.circle(self.win, self.color, (self.x, self.y), 6)
+
+
+class ScoreCard:
+	def __init__(self, x, y, size, style, color, win):
+		
+
+	def update(self, score):
 		
