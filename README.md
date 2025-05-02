@@ -13,12 +13,14 @@ Oyun mekanikleri oldukça basittir:
 - Duvara çarpıldığında oyun sona erer
 - Zorluk seviyesi, oynadıkça ve skorunuz arttıkça yükselir
 
-#OYUNDAN GÖRSELLER
-![Başlangıç:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/first.jpg)
-![Oyun içi:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_ici.jpg)
-![Oyun Sonu:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_sonu.jpg)
 
+# Oyundan Görseller
 
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/first.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_ici.jpg" width="250"/>
+  <img src="https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_sonu.jpg" width="250"/>
+</div>
 
 ## Teknik Detaylar
 ### Kullanılan Teknolojiler
