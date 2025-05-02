@@ -135,5 +135,7 @@ class Message:
 		
 		
 	def update(self):
+		self.win.blit(self.shadow, self.shadow_rect)
+		self.win.blit(self.image, self.rect)
 		
 
