@@ -16,7 +16,7 @@ Oyun mekanikleri oldukça basittir:
 #OYUNDAN GÖRSELLER
 ![Başlangıç:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/first.jpg)
 ![Oyun içi:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_ici.jpg)
-![Oyun Sonu:]([görselin_URL](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_sonu.jpg))
+![Oyun Sonu:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_sonu.jpg)
 
 
 
