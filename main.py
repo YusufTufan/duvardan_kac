@@ -44,3 +44,10 @@ pygame.mixer.music.set_volume(0.5)
 score_font = "Fonts/EvilEmpire-4BBVK.ttf"
 final_score_font = "Fonts/ghostclanital.ttf"
 title_font = "Fonts/dpcomic.ttf"
+
+# Messages
+
+dodgy = Message(WIDTH//2, HEIGHT//3, 80, "Dodgy", title_font, WHITE, win)
+walls = Message(WIDTH//2, HEIGHT//2, 60, "Walls", title_font, WHITE, win)
+tap_to_play = Message(WIDTH//2, HEIGHT-100, 20, "Tap To Play", None, WHITE, win)
+new_high =  Message(WIDTH//2, 240, 20, "NEW HIGH", None, WHITE, win)
