@@ -7,3 +7,7 @@ SCREEN = WIDTH, HEIGHT = 288, 512
 # Pygame için gerekli modülleri başlatıyoruz
 pygame.font.init()
 pygame.mixer.init()
+
+# Ses efektleri
+dash_fx = pygame.mixer.Sound('Sounds/dash.mp3')  # Duvara çarpınca çıkan ses
+flip_fx = pygame.mixer.Sound('Sounds/flip.mp3')  # Yön değiştirince çıkan ses
