@@ -141,6 +141,19 @@ class Message:
 # Patlama efekti 
 class Particle(pygame.sprite.Sprite):
 	def __init__(self, x, y, color, win):
+		super(Particle, self).__init__()
+		self.x = x
+		self.y = y
+		self.color = color
+		self.win = win
+		self.size = random.randint(4, 7)
+		xr = (-3, 3)
+		yr = (-3, 3)
+		f = 2
+		self.life = 40
+		self.x_vel = random.randrange(xr[0], xr[1]) * f
+		self.y_vel = random.randrange(yr[0], yr[1]) * f
+		self.lifetime = 0
 		
 
 	def update(self):
