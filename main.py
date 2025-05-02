@@ -87,3 +87,7 @@ score = 0
 highscore = 0
 player_alive = True
 sound_on = True
+
+home_page = True
+game_page = False
+score_page = False
