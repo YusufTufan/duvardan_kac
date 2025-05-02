@@ -73,3 +73,17 @@ score_msg = ScoreCard(WIDTH//2, 100, 50, score_font, WHITE, win)
 
 # Oyuncu
 p = Player(win)
+
+#Oyun Degiskenleri
+bar_frequency = 1400
+bar_heights = [height for height in range(60,100,10)]
+bar_speed = 3
+pos = -1
+pos_updater = 1
+start_time = pygame.time.get_ticks()
+
+clicked = False
+score = 0
+highscore = 0
+player_alive = True
+sound_on = True
