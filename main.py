@@ -95,3 +95,21 @@ score_page = False
 # Ana döngü
 running = True
 start_time = pygame.time.get_ticks()
+
+while running:
+
+       
+
+    # Ana menü
+    if home_page:
+
+
+    # Skor ekranı
+    if score_page:
+
+
+
+    # Oyun ekranı
+    if game_page:
+
+
