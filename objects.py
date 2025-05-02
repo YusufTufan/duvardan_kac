@@ -121,6 +121,17 @@ class ScoreCard:
 
 class Message:
 	def __init__(self, x, y, size, text, font, color, win):
+		self.win = win
+		if not font:
+			self.font = pygame.font.SysFont("Verdana", size)
+			anti_alias = True
+		else:
+			self.font = pygame.font.Font(font, size)
+			anti_alias = False
+		self.image = self.font.render(text, anti_alias, color)
+		self.rect = self.image.get_rect(center=(x,y))
+		self.shadow = self.font.render(text, anti_alias, (54,69,79))
+		self.shadow_rect = self.image.get_rect(center=(x+2,y+2))
 		
 		
 	def update(self):
