@@ -82,4 +82,11 @@ class Dot(pygame.sprite.Sprite):
 		
 
 	def update(self, speed):
+		self.x -= speed  # Noktayı sola kaydır
+		if self.x <= 0:
+			self.kill()  # Ekranı terk ettiyse sil
+
+		# Noktayı tekrar çiz
+		pygame.draw.circle(self.win, self.color, (self.x, self.y), 6)
+		self.rect = pygame.draw.circle(self.win, self.color, (self.x, self.y), 6)
 		
