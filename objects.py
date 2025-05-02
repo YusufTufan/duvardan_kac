@@ -106,4 +106,15 @@ class ScoreCard:
 		self.shadow_rect = self.image.get_rect(center=(x + 3, y + 3))
 
 	def update(self, score):
-		
+		if self.animate:
+			self.size += self.inc  # Yazıyı büyüt/küçült
+			self.font = pygame.font.Font(self.style, self.size)
+			if self.size <= 50 or self.size >= 60:
+				self.inc *= -1
+			if self.size == 50:
+				self.animate = False  # Animasyon bitti
+
+		self.image = self.font.render(f"{score}", False, self.color)
+		shadow = self.font.render(f"{score}", True, (54, 69, 79))
+		self.win.blit(shadow, self.shadow_rect)
+		self.win.blit(self.image, self.rect)
