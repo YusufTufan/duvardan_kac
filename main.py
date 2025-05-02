@@ -213,13 +213,17 @@ while running:
 		if not player_alive and len(particle_group) == 0:
 			score_page = True
 			game_page = False
-
-		if score_page:
 			bar_group.empty()
 			dot_group.empty()
 			score_page_fx.play()
-			start_time = 0
-
 			final_score = Message(WIDTH//2, 150, 100, f"{score}", score_font, WHITE, win)
+			score_page_fx.play()
+	# Kenar çerçevesi
+   	 pygame.draw.rect(win, WHITE, (0, 0, WIDTH, HEIGHT), 5, border_radius=10)
+
+   	 clock.tick(FPS)
+   	 pygame.display.update()
+
+pygame.quit()
 
 
