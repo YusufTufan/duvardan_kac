@@ -170,7 +170,13 @@ class Particle(pygame.sprite.Sprite):
 		
 class Button(pygame.sprite.Sprite):
 	def __init__(self, img, scale, x, y):
-		
+		super(Button, self).__init__()
+		self.scale = scale
+		self.image = pygame.transform.scale(img, self.scale)
+		self.rect = self.image.get_rect()
+		self.rect.x = x
+		self.rect.y = y
+		self.clicked = False
 	# Butonun görselini güncelle
 	def update_image(self, img):
 		self.image = pygame.transform.scale(img, self.scale)
