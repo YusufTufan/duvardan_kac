@@ -51,3 +51,9 @@ dodgy = Message(WIDTH//2, HEIGHT//3, 80, "Dodgy", title_font, WHITE, win)
 walls = Message(WIDTH//2, HEIGHT//2, 60, "Walls", title_font, WHITE, win)
 tap_to_play = Message(WIDTH//2, HEIGHT-100, 20, "Tap To Play", None, WHITE, win)
 new_high =  Message(WIDTH//2, 240, 20, "NEW HIGH", None, WHITE, win)
+
+# Buton resimleri
+home_img = pygame.image.load('Assets/homeBtn.png')
+replay_img = pygame.image.load('Assets/replay.png')
+sound_off_img = pygame.image.load("Assets/soundOffBtn.png")
+sound_on_img = pygame.image.load("Assets/soundOnBtn.png")
