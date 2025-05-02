@@ -58,5 +58,10 @@ class Player:
 
 class Bar(pygame.sprite.Sprite):
 	def __init__(self, x, y, height, color, win):
+		super(Bar, self).__init__()
+		
+		self.rect = pygame.Rect(x, y, 20, height, border_radius = 8)
+		self.win = win
+		self.color = color
 		
 	def update(self, speed):
