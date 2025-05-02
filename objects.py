@@ -65,3 +65,7 @@ class Bar(pygame.sprite.Sprite):
 		self.color = color
 		
 	def update(self, speed):
+		self.rect.x -= speed
+		if self.rect.x <= 0:
+			self.kill()
+		self.win.fill(self.color, self.rect)
