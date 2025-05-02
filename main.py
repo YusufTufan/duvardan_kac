@@ -132,7 +132,33 @@ while running:
 
     # Skor ekranı
     if score_page:
-        
+        final_score.update()
+        if score and score >= highscore:
+            new_high.update()
+
+        if home_btn.draw(win):
+            home_page = True
+            score_page = False
+            game_page = False
+
+        if replay_btn.draw(win):
+            home_page = False
+            game_page = True
+            score_page = False
+            score = 0
+            bar_speed = 3
+            player_alive = True
+            p = Player(win)
+            start_time = pygame.time.get_ticks()
+
+        if sound_btn.draw(win):
+            sound_on = not sound_on
+            if sound_on:
+                sound_btn.update_image(sound_on_img)
+                pygame.mixer.music.play(loops=-1)
+            else:
+                sound_btn.update_image(sound_off_img)
+                pygame.mixer.music.stop()
 
 
     # Oyun ekranı
