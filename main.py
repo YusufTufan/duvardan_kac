@@ -30,3 +30,11 @@ frameX, frameY = 5, HEIGHT // 2 - frame_height // 2
 # Renkler
 BLACK = (0, 0, 32)
 WHITE = (255, 255, 255)
+
+# Ses dosyaları
+score_fx = pygame.mixer.Sound('Sounds/point.mp3')
+dead_fx = pygame.mixer.Sound('Sounds/dead.mp3')
+score_page_fx = pygame.mixer.Sound('Sounds/score_page.mp3')
+pygame.mixer.music.load('Sounds/Chill Gaming.mp3')
+pygame.mixer.music.play(loops=-1)
+pygame.mixer.music.set_volume(0.5)
