@@ -91,3 +91,7 @@ sound_on = True
 home_page = True
 game_page = False
 score_page = False
+
+# Ana döngü
+running = True
+start_time = pygame.time.get_ticks()
