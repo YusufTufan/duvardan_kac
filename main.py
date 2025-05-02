@@ -38,3 +38,9 @@ score_page_fx = pygame.mixer.Sound('Sounds/score_page.mp3')
 pygame.mixer.music.load('Sounds/Chill Gaming.mp3')
 pygame.mixer.music.play(loops=-1)
 pygame.mixer.music.set_volume(0.5)
+
+# FONTS 
+
+score_font = "Fonts/EvilEmpire-4BBVK.ttf"
+final_score_font = "Fonts/ghostclanital.ttf"
+title_font = "Fonts/dpcomic.ttf"
