@@ -157,6 +157,15 @@ class Particle(pygame.sprite.Sprite):
 		
 
 	def update(self):
+		self.size -= 0.1  # Parçacık küçülüyor
+		self.lifetime += 1
+		if self.lifetime <= self.life:
+			self.x += self.x_vel
+			self.y += self.y_vel
+			s = int(self.size)
+			pygame.draw.rect(self.win, self.color, (self.x, self.y, s, s))
+		else:
+			self.kill()
 		
 		
 
