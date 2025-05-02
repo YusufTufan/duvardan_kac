@@ -1,7 +1,5 @@
 # DUVARDAN KAÇ
 
-![Logo](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/bg2.jpg)
-
 ## Oyun Tanıtımı
 
 "DUVARDAN KAÇ", Python ve pygame kütüphanesi kullanılarak geliştirilen minimalist bir arcade oyunudur. Oyuncular, ekrandaki karakteri kontrol ederek rastgele oluşturulan duvar engelleri arasından geçmeye çalışırlar. Oyunun amacı, duvarlara çarpmadan mümkün olduğunca uzun süre hayatta kalmak ve yüksek skor elde etmektir.
@@ -14,6 +12,10 @@ Oyun mekanikleri oldukça basittir:
 - Her başarılı duvar geçişinde skor artar
 - Duvara çarpıldığında oyun sona erer
 - Zorluk seviyesi, oynadıkça ve skorunuz arttıkça yükselir
+
+#OYUNDAN GÖRSELLER
+
+
 
 ## Teknik Detaylar
 ### Kullanılan Teknolojiler
