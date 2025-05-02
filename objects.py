@@ -56,3 +56,7 @@ class Player:
 		self.y = 270
 		self.rect = self.image.get_rect(center=(self.x,self.y))
 
+class Bar(pygame.sprite.Sprite):
+	def __init__(self, x, y, height, color, win):
+		
+	def update(self, speed):
