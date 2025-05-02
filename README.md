@@ -1,6 +1,6 @@
 # DUVARDAN KAÇ
 
-https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/bg2.jpg
+![Logo](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/bg2.jpg)
 
 ## Oyun Tanıtımı
 
