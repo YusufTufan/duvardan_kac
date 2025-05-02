@@ -73,6 +73,12 @@ class Bar(pygame.sprite.Sprite):
 # Puan veren top sınıfı
 class Dot(pygame.sprite.Sprite):
 	def __init__(self, x, y, win):
+		super(Dot, self).__init__()
+		self.x = x
+		self.y = y
+		self.color = (255, 255, 255)
+		self.win = win
+		self.rect = pygame.draw.circle(win, self.color, (x, y), 6)
 		
 
 	def update(self, speed):
