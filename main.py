@@ -26,3 +26,7 @@ frame_height = 150
 frame = pygame.image.load('Assets/bg3.jpg')
 frame = pygame.transform.scale(frame, (WIDTH - 10, frame_height))
 frameX, frameY = 5, HEIGHT // 2 - frame_height // 2
+
+# Renkler
+BLACK = (0, 0, 32)
+WHITE = (255, 255, 255)
