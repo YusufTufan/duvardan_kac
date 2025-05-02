@@ -69,3 +69,11 @@ class Bar(pygame.sprite.Sprite):
 		if self.rect.x <= 0:
 			self.kill()
 		self.win.fill(self.color, self.rect)
+
+# Puan veren top sınıfı
+class Dot(pygame.sprite.Sprite):
+	def __init__(self, x, y, win):
+		
+
+	def update(self, speed):
+		
