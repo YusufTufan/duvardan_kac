@@ -126,11 +126,13 @@ while running:
 
     # Ana menü
     if home_page:
-
+        dodgy.update()
+        walls.update()
+        tap_to_play.update()
 
     # Skor ekranı
     if score_page:
-
+        
 
 
     # Oyun ekranı
