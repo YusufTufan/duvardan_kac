@@ -14,6 +14,9 @@ Oyun mekanikleri oldukça basittir:
 - Zorluk seviyesi, oynadıkça ve skorunuz arttıkça yükselir
 
 #OYUNDAN GÖRSELLER
+![Başlangıç:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/first.jpg)
+![Oyun içi:](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_ici.jpg)
+![Oyun Sonu:]([görselin_URL](https://raw.githubusercontent.com/YusufTufan/duvardan_kac/refs/heads/main/Assets/oyun_sonu.jpg))
 
 
 
